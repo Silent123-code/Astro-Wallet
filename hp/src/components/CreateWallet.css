@@ -1,0 +1,16 @@
+.create-wallet-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    background-color: #6b2b93;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #c65dc3;
+  }
+  

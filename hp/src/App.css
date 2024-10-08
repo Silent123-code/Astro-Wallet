@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #6bf4268f, #83c5ed);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.366);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto; /* Center the app horizontally */
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Change to transparent or your desired header color */
+  box-shadow: none; /* Remove any box shadow */
+  border: none; /* Remove any border if present */
+}
+
+.wallet-title {
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin: 0; /* Remove margin to align with the logo */
+  color: rgb(62, 0, 0); /* Ensure text is visible, change color as needed */
+}
+
+.account-info {
+  margin-right: 20px; /* Add some space from the right */
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.headerLogo {
+  height: 50px;
+  cursor: pointer; /* Change cursor to pointer for logo */
+}
+
+h1 {
+  font-size: 28px;
+  color: #9c75ca;
+}
+
+.dropdown {
+  width: 80%;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown .ant-select-selector {
+  border: none;
+  border-radius: 5px;
+}
+
+.dropdown:hover {
+  background-color: #ae76aa;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  background: transparent; /* Changed to transparent */
+}
+
+button {
+  background-color: #c65dc3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #6b2b93;
+}
+
+.mnemonic {
+  color: #faad14;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  padding: 5px;
+  text-align: justify;
+  width: 310px;
+  border-radius: 5px;
+}
+
+.walletView {
+  width: 350px;
+  padding: 10px;
+  height: 100%;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.nftImage {
+  margin-bottom: 10px;
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.App {
+  display: flex;                        /* Use flexbox for layout */
+  flex-direction: column;               /* Stack items vertically */
+  justify-content: center;              /* Center items vertically */
+  align-items: center;                  /* Center items horizontally */
+  height: 100vh;                        /* Full viewport height */
+  padding: 20px;                        /* Optional: Add some padding */
+}
+
+/* Container for the welcome options */
+.get-started-container {
+  display: flex;                        /* Use flexbox for layout */
+  flex-direction: column;               /* Stack children vertically */
+  align-items: center;                  /* Center items horizontally */
+}
+
+/* Button styling */
+.action-button {
+  margin: 10px 0;                     /* Vertical margin for buttons */
+  width: 200px;                        /* Optional: Set a consistent button width */
+}
+
+/* Card styling for the options */
+.optionCard {
+  display: flex;                       /* This can remain for content layout */
+  flex-direction: column;              /* Stack content vertically */
+  justify-content: center;             /* Center the content */
+  align-items: center;                 /* Center the content */
+  padding: 20px;                       /* Add some padding */
+  border-radius: 10px;                 /* Rounded corners */
+  background-color: transparent; /* Changed to transparent */
+}
+
+.balance {
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0; /* Remove margin to align with the logo */
+  color: #6c00aa;
+}
+
+.balance-section{
+  color: white;
+}
+
+/* Background for the phone */
+.phone-container {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-image: url("Astronaut bg image.png"); /* Correct image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.phone-container.zoom-in {
+  transform: scale(1.5); /* Add zoom effect on click */
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  justify-content: center; /* Center the buttons vertically */
+  align-items: center; /* Center the buttons horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+.footer {
+  margin-top: auto;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(127, 42, 138);
+}
+
+.ant-card.ant-card-bordered {
+  border: none; /* Removes the border */
+  box-shadow: none; /* Removes any shadow effect, if present */
+}
+
+/* src/components/Welcome.css */
+.welcome-container {
+  display: flex; /* Use Flexbox to align items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Use full viewport height */
+}
+
+.button-container {
+  margin-top: 20px; /* Add some spacing above the button */
+}

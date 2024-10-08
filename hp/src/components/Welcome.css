@@ -1,0 +1,134 @@
+/* Welcome.css */
+
+/* Zoom-in animation for the title */
+.zoom-in {
+  transform: scale(1.2);
+  animation: zoomIn 0.6s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+/* General container styles */
+.welcome-container {
+  font-family: 'Poppins', sans-serif;  /* Adds a modern, sleek font */
+  position: relative;
+}
+
+/* Earth Image: Adding glow effect and rotation */
+.earth-image {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Glow and hover effect on Earth image */
+.earth-image:hover {
+  transform: scale(1.05); /* Slight scale-up on hover */
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.8); /* Glow intensifies */
+}
+
+/* Button Hover Effects */
+.ant-btn-primary {
+  background: linear-gradient(45deg, #007bff, #00c3ff); /* Gradient color */
+  border: none;
+  border-radius: 30px; /* Makes buttons more rounded */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5); /* Soft shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* On hover, scale and elevate the button */
+.ant-btn-primary:hover {
+  transform: scale(1.1); /* Slight scale on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.7); /* Enhance shadow */
+}
+
+/* Title styling for a glowing effect */
+.welcome-title {
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.6);
+  letter-spacing: 2px; /* Slight spacing between characters */
+  animation: glowText 1.5s infinite alternate; /* Glowing animation */
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 123, 255, 0.8), 0 0 40px rgba(0, 123, 255, 0.8);
+  }
+}
+
+/* Subtitle Styling */
+.ant-typography {
+  color: #2076e7;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Background shimmer effect */
+.welcome-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgb(23, 122, 227), rgba(0, 195, 255, 0.1));
+  z-index: -1;
+  animation: shimmer 5s infinite alternate;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+/* Welcome.css */
+
+/* General container styles */
+/* Welcome.css or directly in your styles */
+/* Welcome.css */
+.welcome-container {
+  border: 1px solid rgb(47, 220, 73); /* Add a border to see the container */
+}
+
+button {
+  border: 1px solid blue; /* Add a border to see the button */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Ensure no extra padding */
+}
+
+
+/* Title styling */
+.welcome-title {
+  color: rgb(37, 4, 85);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 123, 255, 0.6);
+  animation: glowText 1.5s infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 123, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 123, 255, 0.8), 0 0 40px rgba(0, 123, 255, 0.8);
+  }
+}
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
